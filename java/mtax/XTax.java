@@ -3,7 +3,7 @@ import java.util.Date;
 
 public class XTax {
 
-	private Object id;
+    private Object id;
     private BigDecimal base;
     private String tax;
     private String typeFactor;
@@ -53,24 +53,24 @@ public class XTax {
     public void setTypeFactor(String typeFactor) {
         this.typeFactor = typeFactor;
     }
-    
+
     public BigDecimal getRate() {
-		return rate;
-	}
+        return rate;
+    }
 
-	public void setRate(BigDecimal rate) {
-		this.rate = rate;
-	}
+    public void setRate(BigDecimal rate) {
+        this.rate = rate;
+    }
 
-	public BigDecimal getFee() {
-		return fee;
-	}
+    public BigDecimal getFee() {
+        return fee;
+    }
 
-	public void setFee(BigDecimal fee) {
-		this.fee = fee;
-	}
+    public void setFee(BigDecimal fee) {
+        this.fee = fee;
+    }
 
-	public BigDecimal getAmount() {
+    public BigDecimal getAmount() {
         return amount;
     }
 
@@ -85,7 +85,7 @@ public class XTax {
     public void setTrasladado(boolean trasladado) {
         this.trasladado = trasladado;
     }
-    
+
     public boolean isLocal() {
         return local;
     }
@@ -141,5 +141,5 @@ public class XTax {
     public void setVersion(String version) {
         this.version = version;
     }
-    
+
 }
