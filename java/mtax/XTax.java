@@ -1,15 +1,14 @@
 import java.math.BigDecimal;
 import java.util.Date;
-import javax.persistence.Id;
-import javax.persistence.Version;
 
-public class X_Tax {
-    
-    private Object id;
+public class XTax {
+
+	private Object id;
     private BigDecimal base;
     private String tax;
     private String typeFactor;
-    private BigDecimal tasaOCuota;
+    private BigDecimal rate;
+    private BigDecimal fee;
     private BigDecimal amount;
     private boolean trasladado;
     private boolean local;
@@ -20,7 +19,7 @@ public class X_Tax {
     private Date updated;
     private String version;
 
-    public X_Tax() {
+    public XTax() {
     }
 
     public Object getId() {
@@ -54,16 +53,24 @@ public class X_Tax {
     public void setTypeFactor(String typeFactor) {
         this.typeFactor = typeFactor;
     }
+    
+    public BigDecimal getRate() {
+		return rate;
+	}
 
-    public BigDecimal getTasaOCuota() {
-        return tasaOCuota;
-    }
+	public void setRate(BigDecimal rate) {
+		this.rate = rate;
+	}
 
-    public void setTasaOCuota(BigDecimal tasaOCuota) {
-        this.tasaOCuota = tasaOCuota;
-    }
+	public BigDecimal getFee() {
+		return fee;
+	}
 
-    public BigDecimal getAmount() {
+	public void setFee(BigDecimal fee) {
+		this.fee = fee;
+	}
+
+	public BigDecimal getAmount() {
         return amount;
     }
 
